@@ -1,0 +1,51 @@
+<h1>Listing products</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Brand</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Image one</th>
+      <th>Image two</th>
+      <th>Image three</th>
+      <th>Image four</th>
+      <th>Category one</th>
+      <th>Category 2</th>
+      <th>Season</th>
+      <th>Original price</th>
+      <th>Current prive</th>
+      <th>Percentage off</th>
+      <th>Product url</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @products.each do |product| %>
+      <tr>
+        <td><%= product.brand %></td>
+        <td><%= product.name %></td>
+        <td><%= product.description %></td>
+        <td><%= product.image_one %></td>
+        <td><%= product.image_two %></td>
+        <td><%= product.image_three %></td>
+        <td><%= product.image_four %></td>
+        <td><%= product.category_one %></td>
+        <td><%= product.category_2 %></td>
+        <td><%= product.season %></td>
+        <td><%= product.original_price %></td>
+        <td><%= product.current_prive %></td>
+        <td><%= product.percentage_off %></td>
+        <td><%= product.product_url %></td>
+        <td><%= link_to 'Show', product %></td>
+        <td><%= link_to 'Edit', edit_product_path(product) %></td>
+        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Product', new_product_path %>

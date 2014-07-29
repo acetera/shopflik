@@ -1,0 +1,74 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Brand:</strong>
+  <%= @product.brand %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @product.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @product.description %>
+</p>
+
+<p>
+  <strong>Image one:</strong>
+  <%= @product.image_one %>
+</p>
+
+<p>
+  <strong>Image two:</strong>
+  <%= @product.image_two %>
+</p>
+
+<p>
+  <strong>Image three:</strong>
+  <%= @product.image_three %>
+</p>
+
+<p>
+  <strong>Image four:</strong>
+  <%= @product.image_four %>
+</p>
+
+<p>
+  <strong>Category one:</strong>
+  <%= @product.category_one %>
+</p>
+
+<p>
+  <strong>Category 2:</strong>
+  <%= @product.category_2 %>
+</p>
+
+<p>
+  <strong>Season:</strong>
+  <%= @product.season %>
+</p>
+
+<p>
+  <strong>Original price:</strong>
+  <%= @product.original_price %>
+</p>
+
+<p>
+  <strong>Current prive:</strong>
+  <%= @product.current_prive %>
+</p>
+
+<p>
+  <strong>Percentage off:</strong>
+  <%= @product.percentage_off %>
+</p>
+
+<p>
+  <strong>Product url:</strong>
+  <%= @product.product_url %>
+</p>
+
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>
