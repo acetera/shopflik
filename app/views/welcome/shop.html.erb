@@ -1,0 +1,16 @@
+<h1>shopping screen</h1>
+
+
+<body>
+
+<% @products.each do |product| %>
+	
+	<b><%= product.name %></b>
+
+	<div><img src= "<%= product.image_one %>" ></div>
+
+
+<%end%>
+
+
+</body>
