@@ -8,6 +8,7 @@ authenticated :user do
 end
 
 root to: 'welcome#index'
+get "amazon_api" => "welcome#amazon_api"
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

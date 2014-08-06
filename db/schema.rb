@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140729010515) do
+ActiveRecord::Schema.define(version: 20140731001457) do
 
   create_table "products", force: true do |t|
     t.string   "brand"
@@ -28,6 +28,14 @@ ActiveRecord::Schema.define(version: 20140729010515) do
     t.float    "current_prive"
     t.float    "percentage_off"
     t.string   "product_url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "user_signals", force: true do |t|
+    t.integer  "UID"
+    t.integer  "PID"
+    t.string   "action"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
